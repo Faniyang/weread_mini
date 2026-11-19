@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self' data:; base-uri 'none'; form-action 'none'">
+  <title>WeRead Mini</title>
+  <link rel="stylesheet" href="toolbar.css">
+  <script src="toolbar.js" defer></script>
+</head>
+<body>
+  <header class="toolbar" aria-label="阅读器工具栏">
+    <div class="nav-actions" id="navigation">
+      <button type="button" data-action="back" title="返回" aria-label="返回">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m14.5 5-7 7 7 7"/></svg>
+      </button>
+      <button type="button" data-action="forward" title="前进" aria-label="前进">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg>
+      </button>
+      <button type="button" data-action="reload" title="刷新" aria-label="刷新">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 7v5h-5M19 12a7 7 0 1 0-2.2 5.1"/></svg>
+      </button>
+    </div>
+    <div class="drag-area"><span class="warning" id="shortcut-warning" title="" aria-label="快捷键不可用">!</span></div>
+    <div class="window-actions">
+      <button type="button" data-action="toggleTop" title="始终置顶" aria-label="始终置顶" aria-pressed="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10l-1 6 3 3v2H5v-2l3-3-1-6ZM12 15v5"/></svg>
+      </button>
+      <button type="button" data-action="opacityMenu" title="透明度" aria-label="设置透明度">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18A9 9 0 0 0 12 3ZM12 3v18"/></svg>
+      </button>
+      <button type="button" data-action="minimize" title="最小化" aria-label="最小化">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/></svg>
+      </button>
+      <button type="button" data-action="hide" title="隐藏阅读器" aria-label="隐藏阅读器" class="hide-button">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8c2.4-2.6 5.1-4 8-4s5.6 1.4 8 4M5 17c2.2 2 4.5 3 7 3s4.8-1 7-3M4 4l16 16"/></svg>
+      </button>
+    </div>
+  </header>
+</body>
+</html>

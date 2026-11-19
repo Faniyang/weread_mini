@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>WeRead Mini 设置</title>
+  <link rel="stylesheet" href="settings.css">
+  <script src="settings.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1>阅读器设置</h1>
+    <form id="settings-form">
+      <label class="field"><span>隐藏 / 恢复快捷键</span><input id="shortcut" type="text" spellcheck="false" autocomplete="off" placeholder="Alt+Q" maxlength="40"></label>
+      <p class="hint">使用 Ctrl、Alt、Shift 与字母、数字或 F1–F12 组合</p>
+      <label class="field"><span>窗口透明度</span><select id="opacity"></select></label>
+      <label class="field"><span>工具栏主题</span><select id="theme"><option value="light">浅色</option><option value="dark">深色</option></select></label>
+      <label class="field"><span>启动时</span><select id="startup"><option value="show">显示阅读器</option><option value="hide">隐藏到托盘</option></select></label>
+      <label class="checkbox"><input id="always-on-top" type="checkbox"><span>始终置顶</span></label>
+      <label class="checkbox"><input id="show-navigation" type="checkbox"><span>显示返回、前进、刷新按钮</span></label>
+      <div class="footer"><p id="status" role="status" aria-live="polite"></p><button type="submit">保存设置</button></div>
+    </form>
+  </main>
+</body>
+</html>

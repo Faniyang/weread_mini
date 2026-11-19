@@ -1,0 +1,23 @@
+appId: com.wereadmini.reader
+productName: WeRead Mini
+directories:
+  output: release
+files:
+  - dist/**/*
+  - assets/**/*
+  - package.json
+asar: true
+win:
+  icon: assets/icon.ico
+  target:
+    - target: nsis
+      arch: [x64]
+    - target: portable
+      arch: [x64]
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  artifactName: WeRead-Mini-Setup-${version}-${arch}.${ext}
+portable:
+  artifactName: WeRead-Mini-Portable-${version}-${arch}.${ext}

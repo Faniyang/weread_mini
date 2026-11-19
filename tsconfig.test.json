@@ -1,0 +1,16 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": false,
+    "outDir": ".test-dist",
+    "rootDir": "."
+  },
+  "include": [
+    "tests/**/*.ts",
+    "src/main/settings.ts",
+    "src/main/shortcuts.ts",
+    "src/main/navigation.ts",
+    "src/main/window-state.ts",
+    "src/shared/types.ts"
+  ]
+}

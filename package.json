@@ -1,0 +1,26 @@
+{
+  "name": "weread-mini",
+  "version": "1.0.0",
+  "private": true,
+  "description": "极简微信读书桌面阅读器",
+  "author": "WeRead Mini contributors",
+  "license": "MIT",
+  "main": "dist/main/index.cjs",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "npm run build && electron .",
+    "build": "node scripts/build.mjs",
+    "dist:win": "npm run build && electron-builder --win --x64 --publish never",
+    "typecheck": "tsc --noEmit",
+    "test": "tsc -p tsconfig.test.json && node scripts/run-tests.cjs"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "electron": "45.2.1",
+    "electron-builder": "26.18.0",
+    "esbuild": "0.28.2",
+    "typescript": "5.9.3"
+  }
+}
